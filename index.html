@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-5i6pZE7A6ZY74Z8aVBl5l+BWOjB0BRNXHGoS6IYbFXXK9zqfJKpBQQpRZMW6CNOx3Hg/32UCBm2wNc4c7vH/Zw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
+
+.snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(6) .inner{animation-delay:6s}.snowflake:nth-of-type(3){left:30%;animation-delay:2s}.snowflake:nth-of-type(11) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(4) .inner{animation-delay:2s}.snowflake:nth-of-type(5){left:50%;animation-delay:3s}.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #484343;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+            display: flex;
+        }
+
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .social-icons a {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #fff;
+            transition: color 0.5s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+        }
+
+        main {
+            flex-grow: 1;
+            padding-left: 80px; /* Adjust as needed */
+            overflow-y: scroll;
+        }
+
+        header, section, footer {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            transition: background-color 0.5s ease;
+        }
+
+        h1, h2, p {
+            color: #3498db;
+        }
+
+        h1:hover, h2:hover, p:hover {
+            color: #2ecc71;
+            transition: color 0.5s ease;
+        }
+
+        section:hover {
+            background-color: #2c3e50;
+            transition: background-color 0.5s ease;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            transition: background-color 0.5s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeInUp 1s ease;
+        }
+    </style>
+    <title>BlueofPhoenix - Programmer</title>
+</head>
+<body>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+        <div class="snowflake">
+          <div class="inner">❅</div>
+        </div>
+      </div>
+
+    <main>
+        <header>
+            <h1>Hey i am Blue a</h1>
+            <p>15-year-old programmer living in Germany</p>
+        </header>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Hello! I'm BlueofPhoenix, a passionate 15-year-old programmer based in Germany. Welcome to my digital space where I share my journey, skills, and projects.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I love diving into the world of programming. Currently, I'm learning Java, Python, C#, C++, and web development technologies such as HTML, CSS, and JS. My goal is to continually grow as a developer and contribute to exciting projects that make a difference.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Here are some of the programming languages and technologies I'm familiar with:</p>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Check out some of my projects on GitHub:</p>
+            <ul>
+                <li><a href="https://github.com/BlueofPhoenix/project1" target="_blank">Soon</a></li>
+                <li><a href="https://github.com/BlueofPhoenix/project2" target="_blank">Soon</a></li>
+                <!-- Add more project links as needed -->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out:</p>
+            <p>Email: <a href="mailto:blueofphoenix@outlook.com">blueofphoenix@outlook.com</a></p>
+            <!-- Remove the LinkedIn section -->
+        </section>
+
+        <footer>
+            <p>&copy; 2023 BlueofPhoenix</p>
+        </footer>
+    </main>
+</body>
+</html>
